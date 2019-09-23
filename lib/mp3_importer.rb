@@ -13,6 +13,7 @@ class MP3Importer
     files = Dir.entries("#{path}").select {|f| !File.directory? f}
     files.each do |item|
       @@files << item
+      #binding.pry
     end
   end
 
